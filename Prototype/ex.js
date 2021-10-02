@@ -29,12 +29,12 @@ Object.getOwnPropertyNames(Document.prototype)
 
 
 
-// Liste os construtores dos dados abaixo
+// Liste os construtores dos dados abaixo. RETORNOS
 const li = document.querySelector('li');
 
 li; // HTMLLIElement          DOM    li.constructor.name   
 li.click; // Function                 li.click.constructor.name 
-li.innerText; // String              li.innerText.toUpperCase
+li.innerText; // String              li.innerText.toUpperCase   No constructor innerT possui o metodo toUpperCase
 li.value; // Number
 li.hidden; // Boolean
 li.offsetLeft; // Number

@@ -7,7 +7,7 @@ function verificarDado(dado) {
 console.log(verificarDado('String'));
 
 // Crie um objeto quadrado com
-// a propriedade lados e torne
+// a propriedad lados e torne
 // ela imutável
 const quadrado = {};
 Object.defineProperties(quadrado , {

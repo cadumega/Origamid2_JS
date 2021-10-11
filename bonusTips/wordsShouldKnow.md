@@ -1,5 +1,5 @@
 *algorithm* - step by step procedure to achieve a specific goal
-*argument* - value that is passsed into a function when it is * ed
+*argument* - value that is passsed into a function when it is called
 *assignment* - the act of putting value in a variable
 *call* - to run a code in a function
 *constant* - variable that never changes it value

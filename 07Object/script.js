@@ -9,6 +9,7 @@ console.log(verificarDado('String'));
 // Crie um objeto quadrado com
 // a propriedad lados e torne
 // ela imutável
+
 const quadrado = {};
 Object.defineProperties(quadrado , {
     lados: {

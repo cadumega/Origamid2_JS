@@ -14,7 +14,7 @@ soma(1,2) //3
 soma(5,4) // 9
 
 //Fç autoinvocavel 
-// Uma f;c anonima entre (), seguida por outro par de parenteses, que represente a sua chamada.
+// Uma fc anonima entre (), seguida por outro par de parenteses, que represente a sua chamada.
 
 (function () {
     let name = "Digital Innovation One"
@@ -38,7 +38,7 @@ const soma3 = {
 
 console.log(soma3);  //3
 
-//Callbacks - fç passada como argumento para outra fç
+//Callbacks - fç passada como argumento/param para outra fç
 // fc recebe op,num1 e num2
 
 const calc = function (operacao, num1,num2) {

@@ -33,6 +33,21 @@ const isDiet = false
 let food = isDiet ? "Salad" : 'Pizza'
 console.log(`I will eat ${food}.`);  // I will eat Pizza
 
+
+
+let color = selectedColor || 'Color is not selected'
+
+
+let Color
+if (selectedColor) {
+    color = selectedColor
+} else {
+    color = 'Color is not selected'
+}
+
+
+
+
 // Ternary Short For Loop
 const languages = ["html", "css", "js"];
 
@@ -41,8 +56,20 @@ for (let i = 0; i < languages.length; i++) {
     console.log(language);
 }
 
+//
 for (let language of languages) console.log(language);
 
+//Numeros maiores que 1.000 e menores que 100.
+let nums = [1000,10,100,600,52,2021,225,47,3658,80]
+
+for(let value of nums) {
+    if(value < 100 || value >= 1000) {
+        console.log(value);
+    }
+}
+//
+let mapNum = nums.map((num) => num < 100 && num >= 1000)
+console.log(mapNum);
 
 // Template Literals
 const fullName = "Carlos Lopes";
@@ -65,11 +92,11 @@ arr[2] = "js";
 let arr = ["html", "css", "js"]
 
 // Arrow Function
-function Addition(a,b) {
+function Addition(a, b) {
     console.log("Addition", a + b);
 }
 
-addition = (a,b) => console.log("Addition", a + b);
+addition = (a, b) => console.log("Addition", a + b);
 
 
 // Identical Keys and Values
@@ -80,7 +107,14 @@ const userDetails = {
     location: location,
 }
 
-const userDetails = { nickname, email, age, location}
+const userDetails = { nickname, email, age, location }
 
-// Accepting multiple options
-let color = 
+// Filter Unique value 
+var numers = [ 45,5,9,16,25];
+var over18 = numbers.filter(myFunction);
+
+document.getElementById("demo").innerHTML = over18;
+
+function myFunction(value,index,array) {
+    return value > 18;
+} //45,25

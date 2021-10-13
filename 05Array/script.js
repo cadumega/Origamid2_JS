@@ -10,6 +10,6 @@ const obj = {
     2:'Teste',
 }
 
-cosnt objArray = Array.from(obj);
-
+const objArray = Array.from(obj);
+console.log(obj);
 //Como a fç contrutora de obj. retorna uma array

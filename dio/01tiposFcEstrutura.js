@@ -22,7 +22,7 @@ soma(5,4) // 9
 }
 )();
 
-//Podemos ter f;c com parametros ou armazenada em uma variavel.
+//Podemos ter fc com parametros ou armazenada em uma variavel.
 (
     function (a,b) {
         return a + b;

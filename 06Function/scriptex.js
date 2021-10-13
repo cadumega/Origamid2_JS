@@ -23,7 +23,7 @@ function criarElemento(tag,classe,conteudo) {
     return elemento;
 }
 
-console.log(criarElemento('li', 'azul' , 'Esse é o conteúdo'));\
+console.log(criarElemento('li', 'azul' , 'Esse é o conteúdo'));
 
 
 // Crie uma nova função utilizando a anterior como base

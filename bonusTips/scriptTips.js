@@ -38,7 +38,7 @@ console.log(`I will eat ${food}.`);  // I will eat Pizza
 let color = selectedColor || 'Color is not selected'
 
 
-let Color
+let color
 if (selectedColor) {
     color = selectedColor
 } else {
@@ -67,7 +67,7 @@ for(let value of nums) {
         console.log(value);
     }
 }
-//
+//short
 let mapNum = nums.map((num) => num < 100 && num >= 1000)
 console.log(mapNum);
 
@@ -92,11 +92,11 @@ arr[2] = "js";
 let arr = ["html", "css", "js"]
 
 // Arrow Function
-function Addition(a, b) {
-    console.log("Addition", a + b);
+function Somar(a, b) {
+    console.log("Somar", a + b);
 }
 
-addition = (a, b) => console.log("Addition", a + b);
+Somar = (a, b) => console.log("Somar", a + b);
 
 
 // Identical Keys and Values

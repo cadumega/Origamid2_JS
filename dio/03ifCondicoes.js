@@ -41,8 +41,8 @@ function numeroPositivo(num) {
 }
 
 numeroPositivo(2) // Esse numero é positivo!
-numeroPositivo(-2)  // Ese numero énegativo!
-numeroPositivo(40) // Esse numero épositivo e maior que 10
+numeroPositivo(-2)  // Ese numero é negativo!
+numeroPositivo(40) // Esse numero é positivo e maior que 10
 
 //JS nao tem elseif, as palavras sáo separadas.
 

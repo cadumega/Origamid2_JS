@@ -72,8 +72,8 @@ console.log('_______________');
 // 6 - Defina a função filosofoHipster que recebe como parâmetro: a profissão de uma pessoa (string), nacionalidade (string) e o número de quilômetros que ele anda por dia (número). Com esses parâmetros avalie se essa pessoa é ou não (true / false), um filósofo Hipster. 
 // Tenha em mente que um filósofo Hipster é um Músico, nascido no Brasil e que gosta de andar mais de 2 quilômetros por dia.
 function filosofoHipster(profissao, nacionalidade, kmDia) {
-    return profissao == 'Músico' && nacionalidade == 'Brasil' && kmDia >= 5 
-  
+    return profissao == 'Músico' && nacionalidade == 'Brasil' && kmDia >= 5
+
 }
 
 console.log(filosofoHipster('Músico', 'Brasil', 10));
@@ -84,8 +84,8 @@ console.log('_______________');
 
 // 7 - Escreva a função podeSeAposentar que recebe por parâmetro a idade, o sexo e os anos de contribuição previdenciária que uma pessoa tem.Tenha em mente que a idade mínima para se aposentar para mulheres é 60 anos, enquanto que para homens é 65. Em ambos os casos, você deve ter pelo menos 30 anos de contribuição.
 function podeSeAposentar(idade, sexo, anosContribuicao) {
-    return idade >= 60 && sexo == "F" && anosContribuicao >=30 
-    || idade >= 65 && sexo == "M" && anosContribuicao >= 30;
+    return idade >= 60 && sexo == "F" && anosContribuicao >= 30
+        || idade >= 65 && sexo == "M" && anosContribuicao >= 30;
 }
 
 console.log(podeSeAposentar(62, "F", 34));            // Atentar o mínimo para se aposentar difere M e F
@@ -94,9 +94,9 @@ console.log('_______________');
 
 
 // 8 - Defina a função podeSubir, recebendo 3 parâmetros: alturaPessoa (numero), vemComCompania (booleano), temProblemaCardiaco (booleano), retorne true ou false conforme o caso. Levar em conta as condições necessárias mencionadas acima.
-function podeSubir (alturaPessoa,vemComCompania,temProblemaCardiaco) {
-    return alturaPessoa >= 1.5 && temProblemaCardiaco == false 
-    || alturaPessoa >= 1.2 && vemComCompania == true && temProblemaCardiaco == false;
+function podeSubir(alturaPessoa, vemComCompania, temProblemaCardiaco) {
+    return alturaPessoa >= 1.5 && temProblemaCardiaco == false
+        || alturaPessoa >= 1.2 && vemComCompania == true && temProblemaCardiaco == false;
 };
 
 console.log(podeSubir(1.7, false, true));
@@ -123,24 +123,111 @@ console.log(medalhaSegundoOPosto(2));
 console.log(medalhaSegundoOPosto(3));
 console.log(medalhaSegundoOPosto(5));
 
+console.log('_______________');
+
 // Laços
 // 1 - Faça uma função chamada imprimirAzul4 que mostre 4 vezes a palavra Azul.
+function imprimirAzul4() {
+    for (var i = 0; i < 4; i++) {
+        console.log("Azul");
+    };
+};
+imprimirAzul4();                                // execução da fc
 
+console.log('_______________');
 // 2 - Execute uma função chamada imprimir5vezes5 que mostra no console 5 vezes o número 5.
+function imprimir5vezes5() {
+    for (var i = 0; i < 5; i++) {
+        console.log(5);
+    };
+};
+imprimir5vezes5();
 
+console.log('_______________');
 // 3 - Escreva uma função passoAPasso, que imprime 5 vezes o conteúdo de i.
-
+function passoAPasso() {
+    for (var i = 0; i <= 4; i++) {
+        console.log(i);
+    };
+};
+passoAPasso();
+console.log('_______________');
 // 4 - Execute uma função chamada passandoPelosPares() que mostra pelo console aqui eu tenho o valor de x para cada valor PAR que percorra i de 0 até e inclusive 6.
+function passandoPelosPares() {
+    for (var i = 0; i <= 6; i++) {
+        if (i % 2 == 0) {
+            console.log("aqui eu tenho o valor de " + i);
+        }
+    };
+};
+passandoPelosPares();
+console.log('_______________');
 
 // 5 - Escreva uma função somar5MoedasDe25Centavos, que adiciona o valor de 5 moedas de 0,25 centavos e retorna o resultado.
 
+var totalMoedas = 0;                                  // Começo com 0 moedas
+function somar5MoedasDe25Centavos() {
+    for (var i = 0; i < 5; i++) {
+        totalMoedas = totalMoedas + 0.25;             // valor de 25 cents
+    };
+    return totalMoedas;
+};
+console.log(somar5MoedasDe25Centavos());
+
+console.log('_______________');
+
 // 6 - Escreva uma função somarMoedasDe25(quantidadeDeMoedas), que toma como parâmetro um valor numérico e retorna a soma das moedas de 25 centavos.
 
+function somarMoedasDe25(quantidadeDeMoedas) {
+    var totalMoedas = 0;
+    for (var i = 0; i < quantidadeDeMoedas; i++) {                        // Até que valor irei percorrer
+        totalMoedas = totalMoedas + 0.25;
+    };
+    return totalMoedas;
+};
+console.log(somarMoedasDe25(1));
+console.log(somarMoedasDe25(10));
+
+
+console.log('_______________');
 // 7 - Defina a função somaDosPares(x) que retorna a soma total de todos os números que são pares, ou seja, divisíveis por 2 obtendo resto 0.
 
-// 8 - Defina a função chamada somatoria, que receba como parâmetro um número e retorne a soma dos números antecessores a ele.
+function somaDosPares(x) {
+    var somaTotal = 0;
+    for (var i = 0; i <= x; i++) {
+        if (i % 2 == 0) {
+            somaTotal = somaTotal + i;
+        }
+    };
+    return somaTotal
+};
+console.log(somaDosPares(10));
 
+console.log('_______________');
+// 8 - Defina a função chamada somatoria, que receba como parâmetro um número e retorne a soma dos números antecessores a ele.
+function somatoria(numeroX) {
+    var somaTudo = 0;
+    for (var i = 0; i < numeroX; i++) {
+        somaTudo = somaTudo + i;
+    }
+    return somaTudo;
+}
+console.log(somatoria(4));
+console.log(somatoria(5));
+
+console.log('_______________');
 // 9 - Crie uma função chamada caloriasDeTrote(), que recebe por parâmetro o número de voltas representado por um valor numérico e retorne a quantidade de calorias que será consumida.
+function caloriasDeTrote(numeroVoltas) {
+    var totalCalorias = 0;
+    var calorias = 5;
+    for (var i = 0; i <= numeroVoltas; i++) {
+        totalCalorias = totalCalorias + (calorias * i);
+    };
+    return totalCalorias;
+};
+console.log(caloriasDeTrote(2));
+
+console.log('_______________');
 
 // Arrays
 // 1 - Crie uma variável do tipo array chamada pertences que contém as strings "espada","escudo","crossbow" e imprima o array utilizando o console.log. Utilize o método push para adicionar a string "cross", após adicionar a string imprima o array novamente com o console.log.

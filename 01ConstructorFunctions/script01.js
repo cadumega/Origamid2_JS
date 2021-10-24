@@ -16,11 +16,11 @@ fiat.preco = 3000;
 // this faz ref ao proprio objeto construído com a Constructor Function
 
 function Carro(marcaAtribuida,precoAtribuido) {
-    this.marca = marcaAtribuida;
+    this.marca = marcaAtribuida; 
     this.preco = precoAtribuido;
 }
 
-// const honda = Carro('Honda');
+const honda = Carro('Honda');
 
 
 function Carro2(marca,precoInicial) {

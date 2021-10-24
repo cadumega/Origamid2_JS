@@ -4,7 +4,7 @@ let lastName;
 let surName = 'beast';
 
 let firstName, lastName, surName = 'beasts';
-
+console.log('Teste');
 
 // Ternary Operator
 let answer, value = 15;

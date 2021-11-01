@@ -8,6 +8,7 @@ const promesa = new Promise((resolve, reject) => {
         reject(Error('Um erro ocorreu na promise'))
       }
     });
+
     
     const retorno = promesa
     .then(resolucao => {

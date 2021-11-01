@@ -9,7 +9,6 @@ console.log(aleatorio);
 
 // 2) Retorne o maior número da lista abaixo
 const numeros = '4, 5, 20, 27, 9';
-
 //Transformar em uma array de numbers
 
 const arrayNumeros = numeros.split(', ');
